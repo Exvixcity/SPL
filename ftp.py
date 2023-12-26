@@ -1,5 +1,4 @@
 from ftplib import FTP, FTP_TLS
-import cmd
 
 class FTPConnect:
     def __init__(self):
@@ -36,6 +35,9 @@ class FTPConnect:
     def interface(self):
         while True:
             command = input("Enter FTP keyword: ")
+            if command == "quit":
+                self.conn.close()
+                import boot
             try:
                 self.conn.voidcmd(command)
             except Exception:
