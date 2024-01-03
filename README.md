@@ -1,2 +1,2 @@
-# ospm
-Close OS package manager
+# spl
+Source Package Library
