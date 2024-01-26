@@ -1,2 +1,2 @@
-# spl
+# SPL
 Source Package Library
